@@ -49,7 +49,7 @@ void AskForPromotion()
         cout<<Name<<", sorry promotion denied , promoted later !"<<"\n"<<endl;
     
 }
-
+ // polymorphism for base employee -> default case
 void Work(){
     cout<<Name<<" is performing their task as daily assigned"<<"\n"<<endl;
 }
@@ -73,6 +73,7 @@ public:
         
     } 
     // polymorphism of their work is represented using the concept polymorphism
+    // polymorphism for Developer employee -> define separate for developer		
     void Work(){
         cout<<Name<<" is debugging the program written using "<< program_language<<"\n"<<endl;
 } 
@@ -91,6 +92,7 @@ public:
     }
     
     // polymorphism of their work is represented using the concept polymorphism
+    // polymorphism for teacher employee -> defined separate for techer 	
     void Work(){
         cout<<Name<<" is teaching lessons on  "<< Subject<<"\n"<<endl;
 } 
